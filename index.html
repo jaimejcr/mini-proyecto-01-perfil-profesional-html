@@ -1,130 +1,158 @@
-<!doctype html>
-  <html lang="es">
-    <head>
-      <!--Elementos esenciales-->
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Jaimedev - Desarollador web Front-end</title>
-      <meta name="description" content="Práctica de estructura, head y enlaces"/>
-      <!--SEO y RRSS-->
-      <link rel="canonical" href="http://127.0.0.1:5500/index.html" />
-      <meta name="robots" content="index, follow" />
-    </head>
-    <body>
-      <header>
-        <nav>
-          <!--Enlaces internos-->
-          <a href="#experience">Experiencia</a>
-          <a href="#proyects">Proyectos</a>
-          <a href="#form">Ir a contacto</a>
-          <!--Enlace externo (_blank redirige a una página nueva para evitar que los usuarios abandonen tu web)-->
-          <a href="https://github.com/GammaTechSchool/MAD_PART_Lovelace_2"
-            target="_blank"
-            rel="noopener noreferrer">Mi perfil de GitHub
-          </a>
-        </nav>
-      </header>
-      <main id="main-content">
-        <section id="about-me">
-          <h1>Portofolio de Jaimedev</h1>
-          <img
-            id="photo-image"
-            width="300"
-            height="200"
-            title="foto de Jaimedev"
-            alt="Jaime y sus socios en formato gibbly"
-            src="/images/Camaleónico web estudio gibly.jpg"
-          />
-          <p>Desarollador Web Front-end</p>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--Elementos esenciales-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Práctica de estructura, head y enlaces" />
+    <meta name="robots" content="index,follow" />
+    <title>Jaimedev - práctica perfil profesional</title>
+    <!--placeholder; actualizar al publicar-->
+    <link rel="canonical" href="http://127.0.0.1:5500/index.html" />
+    <meta property="og:title" ccontent="Comprendiendo HTML" />
+    <meta
+      property="og:description"
+      content="Una breve descripción que engancha"
+    />
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <a href="#main-content">Saltar al contenido principal</a>
+    <header>
+      <nav aria-label="Navegación principal">
+        <!--Enlaces internos-->
+        <a href="#experience">Experiencia</a>
+        <a href="#proyects">Proyectos</a>
+        <a href="#form">Ir a contacto</a>
+        <a
+          href="https://github.com/jaimejcr"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Mi perfil de GitHub
+        </a>
+      </nav>
+    </header>
+    <main id="main-content">
+      <h1>JaimeDev Administrador De Ecosistemas Web</h1>
+      <section id="about-me">
+        <img
+          id="photo-image"
+          width="300"
+          height="200"
+          title="foto de Jaimedev"
+          alt="Jaime y sus socios en formato gibbly"
+          src="assets/img/camaleonico-web-estudio-gibly.jpg"
+        />
+        <p>Desarollador Web Front-end</p>
+      </section>
 
-          <h2 id="experience">Experiencia</h2>
+      <section id="experience">
+        <h2>Experiencia</h2>
+        <ul>
+          <li class="list-item">Adevinta - 2022</li>
+          <li class="list-item">Hubill - 2020</li>
+          <li class="list-item">Nacencia - 2015</li>
+        </ul>
+      </section>
+      <section id="proyects">
+        <h2>Proyectos realizados</h2>
+        <p>Lista de los proyectos en los que he participado</p>
+        <ol>
+          <li>VE en Altura</li>
+          <li>Jiaping Ma</li>
+          <li>El paladar</li>
+          <li>Camaleónico Digital</li>
+        </ol>
+      </section>
 
-          <ul>
-            <li class="list-item">Adevinta - 2022</li>
-            <li class="list-item">Hubill - 2020</li>
-            <li class="list-item">Nacencia - 2015</li>
-          </ul>
-          <h2 id="proyects">Proyectos realizados</h2>
-            <p>Lista de los proyectos en los que he participado</p>
-            <ol>
-              <li>VE en Altura</li>
-              <li>Jiaping Ma</li>
-              <li>El paladar</li>
-              <li>Camaleónico Digital</li>
-            </ol>
-        </section>
+      <section id="contact-me">
+        <h2>Formulario de contacto</h2>
 
-        <section id="contact-me">
-          <h2>Formulario de contacto</h2>
+        <form
+          id="form"
+          method="post"
+          action="mailto:deswebcamaleonico@gmail.com"
+        >
+          <fieldset>
+            <legend>Información personal</legend>
 
-          <form id="form" method="post" action="deswebcamaleonico@gmail.com">
-            <fieldset>
-              <legend>Información personal</legend>
+            <label for="name">Nombre:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Jaime Chochi Rieba"
+            />
+            <label for="email">Email:</label>
+            <input
+              name="email"
+              type="email"
+              id="email"
+              placeholder="emailme@example.com"
+              required
+            />
+            <label for="tel">Teléfono:</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              pattern="+[0-9][0-9]{3}[0-9]{3}[0-9]{3}"
+              placeholder="666777999"
+            />
+            <label for="contact">¿Por qué quierres contactarme</label>
+            <select name="contact" id="contact">
+              <option value="trabajo">Trabajo</option>
+              <option value="formacion">Solicitar formación</option>
+              <option value="informacion">Más información</option>
+            </select>
 
-              <label for="name">Nombre:</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Jaime Chochi Rieba"
-              />
-              <!-- AÑADIR INPUT TEL-->
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="emailme@example.com"
-                required
-              />
-              <label for="tel">Teléfono:</label>
-              <input type="tel" id="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="666777999" />
+            <label for="languages"
+              >¿Con qué lenguaje quieres que te ayude?</label
+            >
+            <input list="languages" id="language" name="language" />
 
-              <legend>Otra información relevante</legend>
-              
-              <label for="contact">¿Por qué quierres contactarme</label>
-              <select name="contact" id="contact">
-                <option value="trabajo">Trabajo</option>
-                <option value="formacion">Solicitar formación</option>
-                <option value="informacion">Más información</option>
-              </select>
+            <datalist id="languages">
+              <option value="Javascript">Javascript</option>
+              <option value="Python"></option>
+              <option value="PHP"></option>
+            </datalist>
 
-              <label for="languages">¿Con qué lenguaje quieres que te ayude?</label>
-              <input list="languages" id="language" name="language" />
+            <label for="terms">¿Aceptas los términos y condiciones?</label>
+            <input type="checkbox" id="terms" name="terms" required />
+          </fieldset>
 
-              <datalist id="languages">
-                <option value="Javascript">Javascript</option>
-                <option value="Python"></option>
-                <option value="PHP"></option>
-              </datalist>
+          <button>Enviar</button>
+        </form>
+      </section>
 
-              <label for="terms">¿Aceptas los términos y condiciones?</label>
-              <input type="checkbox" id="terms" name="terms" required />
-            </fieldset>
+      <section id="questions">
+        <h2>Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Cuánto cuetsa un sitio web</summary>
+          <p>
+            El precio varía dependiendo de la compatibilidad y los servicios.
+          </p>
+        </details>
+        <details>
+          <summary>Haces auditorías web.</summary>
+          <p>
+            Es lo primero que hacemos de hecho en la segunda reunion conmigo, la
+            hacemos juntos para que veas que aspectos son mejorables en tu web.
+          </p>
+        </details>
+      </section>
+    </main>
 
-            <button>Enviar</button>
-          </form>
-        </section>
-
-        <section id="questions">
-          <h2>Preguntas frecuentes</h2>
-          <details>
-            <summary>¿Cuánto cuetsa un sitio web</summary>
-            <p>El precio varía dependiendo de la compatibilidad y los servicios.</p>
-          </details>
-          <details>
-            <summary>Haces auditorías web.</summary>
-            <p>Es lo primero que hacemos de hecho en la segunda reunion conmigo, la hacemos juntos para que veas que aspectos son mejorables en tu web.</p>
-          </details>
-        </section>
-      </main>
-
-      <footer>
-          <h3>JAIMEDEV</h3>
-          <address>
-            <a href="mailto:deswebcamaleonico@gmail.com">deswebcamaleonico@gmail.com</a>
-            <a href="tel:+14155550132">+1 (415)5550132</a>
-          </address>
-          <p>www.linkedin.com/in/jcr-desweb</p>
-      </footer>
-    </body>
-  </html>
+    <footer>
+      <h3>JAIMEDEV</h3>
+      <address>
+        <a href="mailto:deswebcamaleonico@gmail.com"
+          >deswebcamaleonico@gmail.com</a
+        >
+        <a href="tel:+14155550132">+1 (415)5550132</a>
+      </address>
+      <p>www.linkedin.com/in/jcr-desweb</p>
+    </footer>
+  </body>
+</html>
