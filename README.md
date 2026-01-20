@@ -1,3 +1,63 @@
+1 Qué es el repo
+
+Mini proyecto 01 — Perfil profesional (solo HTML)
+
+Baseline actual: práctica del curso (HTML puro) sobre la que se iterará.
+
+2 Objetivo
+
+Semántica + accesibilidad base + SEO técnico mínimo + JSON-LD.
+
+3 Alcance
+
+Solo HTML, sin CSS/JS por ahora.
+
+Assets opcionales en /assets/.
+
+4 Checklist por niveles
+
+P0
+
+doctype, lang, charset, viewport, un solo main
+
+landmarks + nav con aria-label
+
+skip link funcional
+
+headings correctos (1 H1)
+
+metadatos SEO: title/description/robots/canonical/OG
+
+formulario accesible (label/for, name, fieldset/legend)
+
+JSON-LD Person
+
+W3C 0 errores
+
+P1
+
+favicon + theme-color
+
+figure/figcaption, abbr, details/summary “Notas técnicas”
+
+hreflang si bilingüe
+
+P2
+
+404.html, humans.txt/robots.txt, versión ES/EN
+
+5 Verificación
+
+W3C validator (0 errores)
+
+Lighthouse/axe (sin fallos críticos)
+
+navegación por teclado (skip link, foco lógico)
+
+6 Publicación
+
+GitHub Pages + actualizar canonical/og:url a la URL real.
+
 # Mini proyecto 01 — Perfil profesional (solo HTML)
 
 Perfil profesional en una sola página, creado exclusivamente con HTML para practicar estructura semántica, accesibilidad base y SEO técnico, con un estándar verificable tipo entrevista.
