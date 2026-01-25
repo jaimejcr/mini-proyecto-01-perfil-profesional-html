@@ -2,20 +2,19 @@
 <html lang="es">
   <head>
     <!--Elementos esenciales-->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Práctica de estructura, head y enlaces" />
-    <meta name="robots" content="index,follow" />
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="Práctica de estructura, head y enlaces" >
+    <meta name="robots" content="index,follow" >
     <title>Jaimedev - práctica perfil profesional</title>
     <!--placeholder; actualizar al publicar-->
-    <link rel="canonical" href="https://mi-perfil-profesional.test/" />
-    <meta property="og:title" content="Comprendiendo HTML" />
+    <link rel="canonical" href="https://mi-perfil-profesional.test/" >
+    <meta property="og:title" content="Comprendiendo HTML" >
     <meta
       property="og:description"
-      content="Una breve descripción que engancha"
-    />
-    <meta property="og:url" content="https://mi-perfil-profesional.test/" />
-    <meta property="og:type" content="website" />
+      content="Una breve descripción que engancha">
+    <meta property="og:url" content="https://mi-perfil-profesional.test/" >
+    <meta property="og:type" content="website" >
   </head>
   <body>
     <a href="#main-content">Saltar al contenido principal</a>
@@ -36,14 +35,14 @@
     <main id="main-content">
       <h1>JaimeDev Administrador De Ecosistemas Web</h1>
       <section id="about-me">
+        <h2>Sobre</h2>
         <img
           id="photo-image"
           width="300"
           height="200"
           title="foto de Jaimedev"
           alt="Jaime y sus socios en formato gibly"
-          src="assets/img/camaleonico-web-estudio-gibly.jpg"
-        />
+          src="assets/img/camaleonico-web-estudio-gibly.jpg">
         <p>Desarrollador Web Front-end</p>
       </section>
 
@@ -82,24 +81,21 @@
               type="text"
               name="name"
               id="name"
-              placeholder="Jaime Chochi Rieba"
-            />
+              placeholder="Jaime Chochi Rieba">
             <label for="email">Email:</label>
             <input
               name="email"
               type="email"
               id="email"
               placeholder="emailme@example.com"
-              required
-            />
+              required>
             <label for="tel">Teléfono:</label>
             <input
               type="tel"
               name="tel"
               id="tel"
               pattern="^[0-9]{9}$"
-              placeholder="666777999"
-            />
+              placeholder="666777999">
             <label for="contact">¿Por qué quieres contactarme?</label>
             <select name="contact" id="contact">
               <option value="trabajo">Trabajo</option>
@@ -110,7 +106,7 @@
             <label for="language"
               >¿Con qué lenguaje quieres que te ayude?</label
             >
-            <input list="languages" id="language" name="language" />
+            <input list="languages" id="language" name="language" >
 
             <datalist id="languages">
               <option value="Javascript">Javascript</option>
@@ -119,7 +115,7 @@
             </datalist>
 
             <label for="terms">¿Aceptas los términos y condiciones?</label>
-            <input type="checkbox" id="terms" name="terms" required />
+            <input type="checkbox" id="terms" name="terms" required >
           </fieldset>
 
           <button>Enviar</button>
@@ -152,7 +148,8 @@
         >
         <a href="tel:+34155550132">+34155550132</a>
       </address>
-      <p>www.linkedin.com/in/jcr-desweb</p>
+      <a href="www.linkedin.com/in/jcr-desweb" target="_blank"
+      rel="noopener noreferrer">www.linkedin.com/in/jcr-desweb</a>
     </footer>
   </body>
 </html>
