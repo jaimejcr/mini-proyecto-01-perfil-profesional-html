@@ -7,19 +7,29 @@
     <meta name="description" content="Práctica de estructura, head y enlaces" >
     <meta name="robots" content="index,follow" >
     <title>Jaimedev - práctica perfil profesional</title>
-    <!--placeholder; actualizar al publicar-->
+    <!--placeholder canonical; actualizar al publicar-->
     <link rel="canonical" href="https://mi-perfil-profesional.test/" >
     <meta property="og:title" content="Comprendiendo HTML" >
     <meta
       property="og:description"
-      content="Una breve descripción que engancha">
+      content="Especialista en WordPress, rendimiento y SEO técnico. Acelero tu web, reduzco errores y mejoro posicionamiento con foco en resultados.">
     <meta property="og:url" content="https://mi-perfil-profesional.test/" >
     <meta property="og:type" content="website" >
+    <script type="application/ld+json">
+      {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jaime Chochi Rieba",
+      "jobTitle": "Web Ecosystem Manager / WordPress Performance & SEO Technical Specialist",
+      "url": "https://mi-perfil-profesional.test/",
+      "sameAs": ["https://www.linkedin.com/in/jcr-desweb/", "https://github.com/jaimejcr"]
+      }
+    </script>
   </head>
   <body>
     <a href="#main-content">Saltar al contenido principal</a>
     <header>
-      <nav aria-label="Navegación principal">
+      <nav aria-label="Navegacion principal">
         <!--Enlaces internos-->
         <a href="#experience">Experiencia</a>
         <a href="#projects">Proyectos</a>
@@ -76,20 +86,20 @@
           <fieldset>
             <legend>Información personal</legend>
 
-            <label for="name">Nombre:</label>
+            <label for="name">Tu nombre:</label>
             <input
               type="text"
               name="name"
               id="name"
               placeholder="Jaime Chochi Rieba">
-            <label for="email">Email:</label>
+            <label for="email">Tu email:</label>
             <input
               name="email"
               type="email"
               id="email"
               placeholder="emailme@example.com"
               required>
-            <label for="tel">Teléfono:</label>
+            <label for="tel">Tu número de teléfono: +34 </label>
             <input
               type="tel"
               name="tel"
@@ -100,7 +110,7 @@
             <select name="contact" id="contact">
               <option value="trabajo">Trabajo</option>
               <option value="formacion">Solicitar formación</option>
-              <option value="informacion">Más información</option>
+              <option value="info">Más información</option>
             </select>
 
             <label for="language"
@@ -110,15 +120,15 @@
 
             <datalist id="languages">
               <option value="Javascript">Javascript</option>
-              <option value="Python"></option>
-              <option value="PHP"></option>
+              <option value="Python">Python</option>
+              <option value="PHP">PHP</option>
             </datalist>
 
-            <label for="terms">¿Aceptas los términos y condiciones?</label>
+            <label for="terms">Acepta los términos y condiciones</label>
             <input type="checkbox" id="terms" name="terms" required >
           </fieldset>
 
-          <button>Enviar</button>
+          <button>Enviar mis datos</button>
         </form>
       </section>
 
@@ -143,13 +153,20 @@
     <footer>
       <h3>JAIMEDEV</h3>
       <address>
+        <p>Envíame un email a:</p>
         <a href="mailto:deswebcamaleonico@gmail.com"
           >deswebcamaleonico@gmail.com</a
         >
+        <p>Llámame al: </p>
         <a href="tel:+34155550132">+34155550132</a>
       </address>
+      <p>Héchale un vistazo a mi Linkedin</p>
       <a href="www.linkedin.com/in/jcr-desweb" target="_blank"
       rel="noopener noreferrer">www.linkedin.com/in/jcr-desweb</a>
     </footer>
   </body>
 </html>
+
+
+
+
