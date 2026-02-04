@@ -1,0 +1,16 @@
+{
+    "name": "JaimeDev - Perfil profesional",
+    "short_name": "JaimeDev",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#0f172a",
+    "theme_color": "#0f172a",
+    "icons": [
+      {
+        "src": "assets/icons/desweb-favicon.png",
+        "sizes": "360x333",
+        "type": "image/png"
+      }
+    ]
+  }
+  
