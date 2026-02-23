@@ -1,5 +1,8 @@
 # Mini proyecto 01 — Perfil profesional (solo HTML)
 
+# Demo:
+https://jaimejcr.github.io/mini-proyecto-01-perfil-profesional-html/
+
 Perfil profesional en una sola página, creado exclusivamente con HTML para practicar y demostrar  estructura semántica, accesibilidad base y SEO técnico mínimo.
 
 ## Estado del proyecto
